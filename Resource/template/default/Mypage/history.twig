@@ -1,0 +1,13 @@
+{% block script %}
+<script>
+    $(function () {
+        $('#order_inquiry_btn').insertAfter($('.ec-blockBtn--action'));
+    });
+</script>
+{% endblock %}
+{% block main %}
+    <a id="order_inquiry_btn" class="ec-blockBtn--primary w-100 mt-3"
+       href="{{ path('contact', {order_no: Order.order_no}) }}">
+        {{ 'order_inquiry.front.mypage.history.inquiry_btn'|trans }} 
+    </a>
+{% endblock %}

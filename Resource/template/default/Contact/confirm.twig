@@ -1,0 +1,18 @@
+{% block script %}
+<script>
+    $(function () {
+        $('#order_inquiry_form_order_no').insertAfter($('div.ec-borderedDefs dl').eq(4));
+    });
+</script>
+{% endblock %}
+{% block main %}
+                        <dl id="order_inquiry_form_order_no">
+                            <dt>
+                                {{ form_label(form.order_no, 'order_inquiry.common.order_number', { 'label_attr': { 'class': 'ec-label' }}) }}
+                            </dt>
+                            <dd>
+                                {{ form.order_no.vars.data|nl2br }}　
+                                {{ form_widget(form.order_no, { type : 'hidden' }) }}
+                            </dd>
+                        </dl>
+{% endblock %}

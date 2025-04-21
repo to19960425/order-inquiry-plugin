@@ -1,0 +1,12 @@
+{
+  "name": "ec-cube/orderinquiry",
+  "version": "1.0.0",
+  "description": "OrderInquiryPlugin",
+  "type": "eccube-plugin",
+  "require": {
+    "ec-cube/plugin-installer": "~0.0.7 || ^2.0"
+  },
+  "extra": {
+    "code": "OrderInquiry"
+  }
+}

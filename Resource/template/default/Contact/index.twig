@@ -1,0 +1,20 @@
+{% block script %}
+<script>
+    $(function () {
+        $('#order_inquiry_form_order_no').insertAfter($('div.ec-borderedDefs dl').eq(4));
+    });
+</script>
+{% endblock %}
+{% block main %}
+                        <dl id="order_inquiry_form_order_no">
+                            <dt>
+                                {{ form_label(form.order_no, 'order_inquiry.common.order_number', { 'label_attr': { 'class': 'ec-label' }}) }}
+                            </dt>
+                            <dd>
+                                <div class="ec-input{{ has_errors(form.order_no, form.order_no) ? ' error' }}">
+                                    {{ form_widget(form.order_no) }}
+                                    {{ form_errors(form.order_no) }}
+                                </div>
+                            </dd>
+                        </dl>
+{% endblock %}
