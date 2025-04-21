@@ -1,8 +1,13 @@
 ## gitclone してインストール
 ``` bash
 cd app/Plugin
+```
+```bash
 git clone url
+```
+```bash
 mv order-inquiry-plugin OrderInquiry
+```
 ```bash
 #インストール
 bin/console eccube:plugin:install --code=OrderInquiry
