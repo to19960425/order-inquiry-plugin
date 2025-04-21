@@ -3,7 +3,7 @@
 cd app/Plugin
 ```
 ```bash
-git clone url
+git clone git@github.com:to19960425/order-inquiry-plugin.git
 ```
 ```bash
 mv order-inquiry-plugin OrderInquiry
